@@ -16,8 +16,12 @@ export default {
   name: 'MainPage',
   methods: {
     goToSection(section) {
-      // 后续添加导航逻辑
-      console.log('Navigate to:', section)
+      if (section === 'anji') {
+        this.$router.push('/anji-timeline')
+      } else {
+        // 后续添加其他导航逻辑
+        console.log('Navigate to:', section)
+      }
     }
   }
 }

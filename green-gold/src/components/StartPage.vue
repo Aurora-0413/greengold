@@ -1,6 +1,8 @@
 <template>
   <div class="start-page">
-    <button class="explore-btn" @click="startExplore">开始探索</button>
+    <button class="explore-btn" @click="startExplore">
+      <span class="btn-text">开始探索</span>
+    </button>
   </div>
 </template>
 
@@ -35,16 +37,35 @@ export default {
 }
 
 .explore-btn {
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #333;
+  width: 200px;
+  height: 200px;
+  background-image: url('../assets/start.webp');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
-  border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 5vh;
   z-index: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8),
+               -1px -1px 2px rgba(255, 255, 255, 0.6);
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -52,9 +73,11 @@ export default {
     background-size: contain;
   }
   .explore-btn {
-    padding: 15px 40px;
-    font-size: 1.2rem;
-    border-radius: 30px;
+    width: 250px;
+    height: 250px;
+  }
+  .btn-text {
+    font-size: 1.4rem;
   }
 }
 
@@ -65,14 +88,27 @@ export default {
   }
   .explore-btn {
     margin-bottom: 30px;
-    padding: 10px 25px;
+    width: 150px;
+    height: 150px;
+  }
+  .btn-text {
     font-size: 1rem;
   }
 }
 
 .explore-btn:hover {
-  background-color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1) translateY(-5px);
+  filter: brightness(1.1) drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+}
+
+.explore-btn:hover .btn-text {
+  transform: scale(1.05);
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 1),
+               -1px -1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.explore-btn:active {
+  transform: scale(1.05) translateY(-2px);
+  filter: brightness(1.05);
 }
 </style>

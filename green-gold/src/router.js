@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import StartPage from './components/StartPage.vue'
 import MainPage from './components/MainPage.vue'
+import AnjiTimeline from './components/AnjiTimeline.vue'
 
 const routes = [
     {
@@ -10,6 +11,10 @@ const routes = [
     {
         path: '/main',
         component: MainPage
+    },
+    {
+        path: '/anji-timeline',
+        component: AnjiTimeline
     }
 ]
 
