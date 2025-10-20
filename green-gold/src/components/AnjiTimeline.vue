@@ -138,7 +138,7 @@ export default {
 <style scoped>
 .timeline-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffffff 0%, #7ab594 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffccd5 100%);
   padding: 2rem;
   overflow-x: hidden;
   position: relative;
@@ -146,7 +146,7 @@ export default {
 
 .timeline-header {
   text-align: center;
-  color: #2c5841;
+  color: #d23f57;
   margin-bottom: 3rem;
   animation: fadeInDown 1s ease;
 }
@@ -244,11 +244,11 @@ export default {
   width: 24px;
   height: 24px;
   background: white;
-  border: 4px solid #4a8c6c;
+  border: 4px solid #d23f57;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 0 0 rgba(74, 140, 108, 0.7);
+  box-shadow: 0 0 0 0 rgba(210, 63, 87, 0.7);
   animation: pulse 2s infinite;
   z-index: 2;
 }
@@ -256,8 +256,8 @@ export default {
 .timeline-item.active .timeline-dot,
 .timeline-dot:hover {
   transform: scale(1.5);
-  background: #4a8c6c;
-  box-shadow: 0 0 20px rgba(74, 140, 108, 0.8);
+  background: #d23f57;
+  box-shadow: 0 0 20px rgba(210, 63, 87, 0.8);
 }
 
 .timeline-content {
@@ -279,26 +279,26 @@ export default {
 .year {
   font-size: 2rem;
   font-weight: bold;
-  color: #2c5841;
+  color: #d23f57;
   margin-bottom: 0.5rem;
 }
 
 .event-title {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #2c5841;
+  color: #d23f57;
   margin-bottom: 0.5rem;
 }
 
 .event-desc {
   font-size: 1rem;
-  color: #447a5c;
+  color: #bf4f65;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
 .view-btn {
-  background: linear-gradient(135deg, #4a8c6c 0%, #2c5841 100%);
+  background: linear-gradient(135deg, #d23f57 0%, #bf4f65 100%);
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -307,12 +307,12 @@ export default {
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(74, 140, 108, 0.4);
+  box-shadow: 0 4px 12px rgba(210, 63, 87, 0.4);
 }
 
 .view-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(74, 140, 108, 0.6);
+  box-shadow: 0 6px 16px rgba(210, 63, 87, 0.6);
 }
 
 /* 视频弹窗 */
