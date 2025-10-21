@@ -1,0 +1,867 @@
+[
+    {
+        "question": "建设社会主义生态文明的根本目的是什么？\nA. 追求单一经济高速增长\nB. 实现人与自然和谐共生\nC. 扩大资源粗放型开发\nD. 完全停止工业活动",
+        "correct_answer": "B",
+        "explanation": "生态文明以协调人—自然关系为核心，目标是和谐共生。"
+    },
+    {
+        "question": "推进生态文明建设的基本遵循是？\nA. 市场价格波动\nB. 自然规律和社会发展规律\nC. 短期财政收入\nD. 国际舆论导向",
+        "correct_answer": "B",
+        "explanation": "必须尊重、顺应、保护自然规律，同时兼顾社会经济发展规律。"
+    },
+    {
+        "question": "“坚持山水林田湖草沙一体化保护和系统治理”强调的治理理念是？\nA. 各要素分割管理\nB. 单点治理\nC. 系统观与整体性\nD. 事后补救为主",
+        "correct_answer": "C",
+        "explanation": "强调自然要素作为生命共同体的系统治理与整体修复。"
+    },
+    {
+        "question": "“绿水青山就是金山银山”阐明的关键关系是？\nA. 生态保护与经济发展的对立\nB. 生态保护与经济发展的辩证统一\nC. 生态无用论\nD. 发展优先于生态",
+        "correct_answer": "B",
+        "explanation": "提出保护生态本身就是发展生产力，二者相辅相成。"
+    },
+    {
+        "question": "建设美丽中国的总体方向是？\nA. 粗放开发\nB. 高污染高排放发展\nC. 绿色低碳转型\nD. 资源零利用",
+        "correct_answer": "C",
+        "explanation": "以绿色低碳高质量发展为主线，推进美丽中国建设。"
+    },
+    {
+        "question": "以下哪项属于“最严格制度最严密法治”要求？\nA. 放松环境准入\nB. 环境执法宽松\nC. 全覆盖、零容忍的生态监管\nD. 以罚代管常态化",
+        "correct_answer": "C",
+        "explanation": "强调严密制度体系与严格执法监管，形成硬约束。"
+    },
+    {
+        "question": "推动形成绿色生产方式的关键抓手是？\nA. 提高资源税费抑制节约\nB. 提升能效和清洁生产\nC. 放宽排放标准\nD. 加大化石能源补贴",
+        "correct_answer": "B",
+        "explanation": "清洁生产与能效提升直接促进绿色生产方式落地。"
+    },
+    {
+        "question": "“生态兴则文明兴，生态衰则文明衰”揭示的逻辑是？\nA. 文明与生态无关\nB. 文明发展完全取决于科技\nC. 生态环境是文明兴衰的重要基础\nD. 经济越发达生态必越差",
+        "correct_answer": "C",
+        "explanation": "生态环境承载文明发展，是文明兴衰的重要变量。"
+    },
+    {
+        "question": "人与自然和谐共生的实现路径更符合下列哪项？\nA. 无节制资源开采\nB. 节约优先、保护优先、自然修复为主\nC. 先污染后治理\nD. 单纯依赖末端治理",
+        "correct_answer": "B",
+        "explanation": "坚持节约与保护在先，强化自然修复，才能和谐共生。"
+    },
+    {
+        "question": "全球生态文明建设强调的共同原则是？\nA. 各国各自为政\nB. 共同但有区别的责任\nC. 发展中国家单方承担\nD. 只看历史排放不看现实贡献",
+        "correct_answer": "B",
+        "explanation": "国际环境治理强调公平与责任分担原则。"
+    },
+    {
+        "question": "绿色生活方式不包括哪项？\nA. 垃圾分类\nB. 节能减排出行\nC. 过度包装消费\nD. 节水用电",
+        "correct_answer": "C",
+        "explanation": "过度包装造成资源浪费，与绿色生活背道而驰。"
+    },
+    {
+        "question": "生态文明制度体系的核心作用是？\nA. 提供软约束\nB. 提供硬约束和长效机制\nC. 仅作为宣传口号\nD. 临时性政策工具",
+        "correct_answer": "B",
+        "explanation": "通过制度与法治提供刚性约束，形成长效治理。"
+    },
+    {
+        "question": "以下哪项最能体现“源头防控”的要求？\nA. 加大末端治理投入\nB. 生产后集中治理\nC. 准入前环评与清洁工艺替代\nD. 排污后补贴修复",
+        "correct_answer": "C",
+        "explanation": "在源头通过环评和技术替代防止污染产生更有效。"
+    },
+    {
+        "question": "“双碳”目标的本质取向是？\nA. 降低能源安全水平\nB. 推动高碳锁定\nC. 促进经济社会绿色低碳转型\nD. 单纯减产",
+        "correct_answer": "C",
+        "explanation": "以降碳为牵引促进经济社会全面绿色转型。"
+    },
+    {
+        "question": "建设美丽中国的标志性成果体现为？\nA. 蓝天、碧水、净土保卫战成效显著\nB. 持续重污染天气\nC. 黑臭水体增加\nD. 土壤污染加剧",
+        "correct_answer": "A",
+        "explanation": "美丽中国建设体现在环境质量持续改善的硬指标上。"
+    },
+    {
+        "question": "人与自然和谐共生的基本哲学基础是？\nA. 人定胜天\nB. 天人合一\nC. 机械唯物论\nD. 经验主义",
+        "correct_answer": "B",
+        "explanation": "强调人与自然是命运共同体，主张整体协同。"
+    },
+    {
+        "question": "推进生态保护补偿制度的主要作用是？\nA. 抬高交易成本\nB. 弥补保护者利益、激励保护行为\nC. 仅用于宣传\nD. 转嫁企业成本",
+        "correct_answer": "B",
+        "explanation": "通过补偿机制使生态保护者获得合理收益。"
+    },
+    {
+        "question": "以下哪项符合“绿色消费”导向？\nA. 选择能效等级高的家电\nB. 以一次性用品为主\nC. 盲目攀比消费\nD. 忽视产品全生命周期",
+        "correct_answer": "A",
+        "explanation": "高能效产品可降低能耗，符合绿色消费原则。"
+    },
+    {
+        "question": "“山水林田湖草沙”共同体观强调？\nA. 单要素优化\nB. 生态要素相互作用、协同治理\nC. 复垦替代一切\nD. 工程治理替代系统思维",
+        "correct_answer": "B",
+        "explanation": "将多要素视为生命共同体，实施协同治理。"
+    },
+    {
+        "question": "打好污染防治攻坚战的重点是？\nA. 只抓宣传\nB. 精准、科学、依法治污\nC. 一刀切停产\nD. 追求短期数据好看",
+        "correct_answer": "B",
+        "explanation": "强调精准施策、科学治理、严格依法。"
+    },
+    {
+        "question": "生态环境保护的“三条红线”通常不包含？\nA. 生态保护红线\nB. 环境质量底线\nC. 资源利用上线\nD. 财政赤字红线",
+        "correct_answer": "D",
+        "explanation": "财政赤字不属于生态环境保护红线范畴。"
+    },
+    {
+        "question": "“以国家公园为主体的自然保护地体系”的优势在于？\nA. 强化多头管理\nB. 保护完整生态系统\nC. 降低保护等级\nD. 放宽准入活动",
+        "correct_answer": "B",
+        "explanation": "国家公园重在整体性、系统性保护原真性完整性。"
+    },
+    {
+        "question": "“绿水青山”转化为“金山银山”的主要路径不包括？\nA. 生态产品价值实现机制\nB. 生态旅游与绿色产业\nC. 生态破坏换短期收益\nD. 绿色品牌与认证",
+        "correct_answer": "C",
+        "explanation": "破坏生态不可持续，违背“两山”理念。"
+    },
+    {
+        "question": "“最严密法治”在生态领域的关键体现是？\nA. 以罚代管\nB. 事后宽宥\nC. 行政、刑事、民事责任衔接\nD. 仅倡议不强制",
+        "correct_answer": "C",
+        "explanation": "完善多元法律责任体系，形成全链条法律约束。"
+    },
+    {
+        "question": "推动形成绿色生活方式的社会基础是？\nA. 绿色社区与公共服务\nB. 高碳公共设施\nC. 过度依赖私家车\nD. 垃圾不分类",
+        "correct_answer": "A",
+        "explanation": "绿色公共服务和社区治理为绿色生活提供条件。"
+    },
+    {
+        "question": "生态文明体制改革强调的方向是？\nA. 管、产不分\nB. 政企不分\nC. 产权清晰、权责明确、协同高效\nD. 放松监管",
+        "correct_answer": "C",
+        "explanation": "通过体制机制改革，提升治理效能与合规激励。"
+    },
+    {
+        "question": "生态红线的功能不包括？\nA. 维护国家生态安全\nB. 保障关键生态服务功能\nC. 为高污染项目预留空间\nD. 保护生物多样性",
+        "correct_answer": "C",
+        "explanation": "生态红线禁止高污染高风险活动。"
+    },
+    {
+        "question": "推进“无废城市”建设的核心理念是？\nA. 大量填埋\nB. 资源化与减量化\nC. 任意排放\nD. 只抓回收不抓减量",
+        "correct_answer": "B",
+        "explanation": "通过源头减量、资源化利用，实现固废最小化。"
+    },
+    {
+        "question": "以下最符合“人与自然命运共同体”的表述是？\nA. 人类凌驾于自然\nB. 损害自然终将损害人类自身\nC. 自然可无限索取\nD. 生态只是成本",
+        "correct_answer": "B",
+        "explanation": "强调人类福祉与自然健康相互依存。"
+    },
+    {
+        "question": "节能优先的政策取向更应体现为？\nA. 能效标准提升\nB. 能源补贴扩大\nC. 鼓励高能耗产品\nD. 降低节能门槛",
+        "correct_answer": "A",
+        "explanation": "提升能效标准倒逼产业升级，减少能耗与排放。"
+    },
+    {
+        "question": "生态系统修复更强调哪项？\nA. 顺应自然恢复力\nB. 强行改变地貌\nC. 过度工程硬化\nD. 只求短期景观效果",
+        "correct_answer": "A",
+        "explanation": "优先发挥自然修复功能，减少人为干扰。"
+    },
+    {
+        "question": "关于“碳达峰、碳中和”，错误的是？\nA. 需要优化能源结构\nB. 依靠技术进步和制度创新\nC. 强化碳排放统计与交易\nD. 与高质量发展无关",
+        "correct_answer": "D",
+        "explanation": "双碳与高质量发展高度一致、相互促进。"
+    },
+    {
+        "question": "水环境治理的系统性措施更可能是？\nA. 断点式治理\nB. 流域一体化管控\nC. 单厂末端治理\nD. 只抓入河排口",
+        "correct_answer": "B",
+        "explanation": "以流域为单元统筹上中下游、左右岸。"
+    },
+    {
+        "question": "“美丽中国”目标中的美丽山川主要强调？\nA. 视觉景观即可\nB. 生态功能与景观并重\nC. 人工造景为主\nD. 开发优先",
+        "correct_answer": "B",
+        "explanation": "既要美在形，更要美在质与生态功能。"
+    },
+    {
+        "question": "以下哪项属于绿色金融的典型工具？\nA. 高碳产业专项贷款\nB. 绿色债券与碳交易\nC. 无条件财政补贴\nD. 高排放信用豁免",
+        "correct_answer": "B",
+        "explanation": "绿色债券、碳市场引导资金流向绿色领域。"
+    },
+    {
+        "question": "“两山”理念在地方治理中的落实路径不包括？\nA. 生态产品价值核算\nB. 生态资源资产化、权益化\nC. 生态破坏换地租\nD. 绿色产业嵌入",
+        "correct_answer": "C",
+        "explanation": "以破坏换收益违背“两山”转化路径。"
+    },
+    {
+        "question": "生态文明教育的核心目标是？\nA. 强化功利消费观\nB. 培育绿色价值观与行为习惯\nC. 宣传口号\nD. 只面向专业人士",
+        "correct_answer": "B",
+        "explanation": "通过教育塑造绿色理念与自觉行动。"
+    },
+    {
+        "question": "推进绿色供应链的关键环节是？\nA. 仅末端处置\nB. 全生命周期管理\nC. 放宽上游标准\nD. 忽视物流环节",
+        "correct_answer": "B",
+        "explanation": "从设计、采购、生产、流通到回收全链条绿色化。"
+    },
+    {
+        "question": "关于自然保护地内活动，正确的是？\nA. 可随意商业开发\nB. 坚持分区管控、严格准入\nC. 只要缴费即可\nD. 与保护目标无关",
+        "correct_answer": "B",
+        "explanation": "实行严格分区和准入制度，保障保护目标。"
+    },
+    {
+        "question": "“以人民为中心”的生态文明观不包括？\nA. 关注公平正义\nB. 加强环境民生保障\nC. 环境风险防控\nD. 环境信息完全不公开",
+        "correct_answer": "D",
+        "explanation": "应推进信息公开与公众参与，保障环境权益。"
+    },
+    {
+        "question": "推动绿色低碳交通的优先措施是？\nA. 发展公共交通与慢行系统\nB. 鼓励超大排量车辆\nC. 降低车辆排放标准\nD. 取消节能车优惠",
+        "correct_answer": "A",
+        "explanation": "公共交通与慢行体系可显著降低交通碳排。"
+    },
+    {
+        "question": "提高环境治理现代化水平的关键能力是？\nA. 数据监测与数字化监管\nB. 人治为主\nC. 线下纸质报表\nD. 经验判断为主",
+        "correct_answer": "A",
+        "explanation": "数字化赋能提升监测预警和精准执法能力。"
+    },
+    {
+        "question": "“生态兴则文明兴”的现实要求更接近？\nA. 生态让位于发展\nB. 建设生态安全屏障\nC. 资源无限供给\nD. 发展不受约束",
+        "correct_answer": "B",
+        "explanation": "构筑生态安全屏障是文明长治久安之基。"
+    },
+    {
+        "question": "“绿水青山就是金山银山”的实践典型更可能体现为？\nA. 退耕还林还草\nB. 盲目开矿\nC. 围湖造田\nD. 过度放牧",
+        "correct_answer": "A",
+        "explanation": "通过生态修复提升生态服务，带动绿色收益。"
+    },
+    {
+        "question": "落实最严格水资源管理制度的核心指标不含？\nA. 用水总量控制\nB. 用水效率控制\nC. 重要水功能区水质达标\nD. 企业利润率",
+        "correct_answer": "D",
+        "explanation": "利润率不属于水资源管理的核心管控指标。"
+    },
+    {
+        "question": "以下哪项做法体现“节约优先”？\nA. 大规模一次性用品\nB. 建筑保温与节能改造\nC. 高耗水景观喷泉\nD. 长时间空载照明",
+        "correct_answer": "B",
+        "explanation": "建筑节能改造是节约优先的重要抓手。"
+    },
+    {
+        "question": "推动绿色技术创新的主要机制是？\nA. 放弃研发\nB. 创新驱动与产学研协同\nC. 只靠进口技术\nD. 与产业脱节",
+        "correct_answer": "B",
+        "explanation": "创新体系和协同机制支撑绿色技术突破与应用。"
+    },
+    {
+        "question": "生态补偿重点区域通常是？\nA. 生态敏感区与关键生态功能区\nB. 重污染工业园区\nC. 城市CBD\nD. 一般居民区",
+        "correct_answer": "A",
+        "explanation": "在生态关键区建立补偿激励机制更具必要性。"
+    },
+    {
+        "question": "推进塑料污染治理的有效措施是？\nA. 全面放开一次性塑料\nB. 源头禁限、替代材料、回收体系\nC. 只做清扫\nD. 不设目标",
+        "correct_answer": "B",
+        "explanation": "综合施策，系统推进减量与替代和回收。"
+    },
+    {
+        "question": "构建现代环境治理体系，以下不属于其特征的是？\nA. 政府统领、企业主体、公众参与\nB. 多元共治\nC. 信息公开\nD. 以秘密执法为主",
+        "correct_answer": "D",
+        "explanation": "现代治理强调公开透明与公众参与。"
+    },
+    {
+        "question": "推进绿色农业的关键路径是？\nA. 过量施化肥农药\nB. 发展绿色种养循环、减肥减药\nC. 焚烧秸秆\nD. 破坏耕地质量",
+        "correct_answer": "B",
+        "explanation": "绿色农业强调减量增效与循环利用。"
+    },
+    {
+        "question": "美丽中国建设中的“美丽城市”更强调？\nA. 外观造景\nB. 生态宜居、低碳韧性\nC. 地标竞赛\nD. 超量照明",
+        "correct_answer": "B",
+        "explanation": "宜居、低碳、韧性是城市高质量发展的方向。"
+    },
+    {
+        "question": "推进自然资源统一确权登记的意义是？\nA. 弱化产权激励\nB. 强化保护与有偿使用基础\nC. 方便无序开发\nD. 降低资源价值",
+        "correct_answer": "B",
+        "explanation": "确权登记是保护和有偿使用的制度基础。"
+    },
+    {
+        "question": "完善生态环境损害赔偿制度的目标是？\nA. 降低违法成本\nB. 恢复生态功能、倒逼守法\nC. 仅罚款了事\nD. 引导纵容",
+        "correct_answer": "B",
+        "explanation": "通过赔偿修复与责任追究，提升违法代价。"
+    },
+    {
+        "question": "生物多样性保护的核心是？\nA. 只重单一旗舰物种\nB. 维护生态系统结构与功能\nC. 任意引入外来物种\nD. 阻断物种迁徙廊道",
+        "correct_answer": "B",
+        "explanation": "系统保护结构与功能，才能稳定多样性。"
+    },
+    {
+        "question": "绿色建筑评价更关注？\nA. 能耗、水耗、材料与室内环境\nB. 外立面复杂度\nC. 造价越高越好\nD. 只看面积",
+        "correct_answer": "A",
+        "explanation": "关注资源效率与健康舒适等综合指标。"
+    },
+    {
+        "question": "“生态文明”与“文明形态”的关系更接近？\nA. 与文明无关\nB. 是工业文明的倒退\nC. 是人与自然关系文明化的新形态\nD. 仅环境学概念",
+        "correct_answer": "C",
+        "explanation": "生态文明是更高级形态，反映人—自然文明关系。"
+    },
+    {
+        "question": "推进大气污染治理的关键技术路线不包括？\nA. 超低排放改造\nB. 清洁能源替代\nC. 非法排放\nD. 区域联防联控",
+        "correct_answer": "C",
+        "explanation": "非法排放违法违规，违背治理要求。"
+    },
+    {
+        "question": "绿色贸易壁垒的积极一面在于？\nA. 限制国际合作\nB. 倒逼国内产业绿色升级\nC. 削弱竞争力\nD. 造成长期闭塞",
+        "correct_answer": "B",
+        "explanation": "有助于促进标准提升与绿色竞争力。"
+    },
+    {
+        "question": "“共建地球生命共同体”更强调？\nA. 单边主义\nB. 合作应对全球环境挑战\nC. 环境议题政治化\nD. 竞争优先",
+        "correct_answer": "B",
+        "explanation": "全球性问题需合作共治、共享成果。"
+    },
+    {
+        "question": "绿色制造的核心指标通常不含？\nA. 单位产值能耗\nB. 单位产值用水\nC. 污染物单位排放\nD. 企业品牌知名度",
+        "correct_answer": "D",
+        "explanation": "品牌知名度非绿色制造的技术性指标。"
+    },
+    {
+        "question": "“用最严格制度保护生态环境”中的“严格”不体现为？\nA. 标准严\nB. 监管严\nC. 执法严\nD. 任意放宽",
+        "correct_answer": "D",
+        "explanation": "严格制度要求标准、监管、执法全链条从严。"
+    },
+    {
+        "question": "推动形成绿色生活方式的关键主体是？\nA. 仅政府\nB. 仅企业\nC. 全社会共同参与\nD. 仅环保组织",
+        "correct_answer": "C",
+        "explanation": "政府引导、企业落实、公众参与共同推进。"
+    },
+    {
+        "question": "关于自然资源资产离任审计，说法正确的是？\nA. 与生态责任无关\nB. 强化领导干部生态责任\nC. 只审财政收支\nD. 不看生态成效",
+        "correct_answer": "B",
+        "explanation": "离任审计压实领导干部生态文明建设责任。"
+    },
+    {
+        "question": "以下哪项不利于绿色社区建设？\nA. 垃圾分类与回收\nB. 海绵设施与绿地\nC. 共享出行设施\nD. 大量硬化地面",
+        "correct_answer": "D",
+        "explanation": "过度硬化降低渗透能力，不利于生态功能。"
+    },
+    {
+        "question": "“三线一单”中的“一单”指？\nA. 单项工程清单\nB. 生态环境准入清单\nC. 企业名录\nD. 项目审批清单",
+        "correct_answer": "B",
+        "explanation": "即生态环境分区管控的准入清单与要求。"
+    },
+    {
+        "question": "全球可持续发展目标（SDGs）与生态文明的关系是？\nA. 目标相悖\nB. 高度契合、相互支撑\nC. 相互独立\nD. 互相替代",
+        "correct_answer": "B",
+        "explanation": "两者都强调环境、经济、社会的协调发展。"
+    },
+    {
+        "question": "“生态环境是最普惠的民生福祉”意味着？\nA. 只惠及少数人\nB. 良好生态惠及全体人民\nC. 与民生无关\nD. 只在城市体现",
+        "correct_answer": "B",
+        "explanation": "清洁空气与安全水源等普惠性民生属性明显。"
+    },
+    {
+        "question": "推进海洋生态文明建设不包括？\nA. 严控近海污染\nB. 保护红树林、海草床\nC. 发展绿色海洋产业\nD. 任意围填海",
+        "correct_answer": "D",
+        "explanation": "无序围填海破坏海洋生态，必须严格管控。"
+    },
+    {
+        "question": "以下哪项更能推动“绿色低碳能源体系”？\nA. 提高煤电比重\nB. 开发可再生能源与储能\nC. 延缓电网升级\nD. 弱化需求侧管理",
+        "correct_answer": "B",
+        "explanation": "可再生与储能是构建低碳能源体系的关键。"
+    },
+    {
+        "question": "生态产品的典型特征是？\nA. 可无限开采\nB. 外部性明显、公共性强\nC. 只对个体有益\nD. 与市场无关",
+        "correct_answer": "B",
+        "explanation": "生态产品具有外部性与公共品属性。"
+    },
+    {
+        "question": "推进国土绿化的科学路径是？\nA. 适地适树、乔灌草结合\nB. 单一树种大面积造林\nC. 速生林为主\nD. 忽视水土条件",
+        "correct_answer": "A",
+        "explanation": "遵循生态规律，构建稳定多样的植被结构。"
+    },
+    {
+        "question": "建设绿色“一带一路”倡议强调？\nA. 高排放项目优先\nB. 绿色基建与环境风险管控\nC. 只看投资规模\nD. 弱化环境标准",
+        "correct_answer": "B",
+        "explanation": "倡导绿色合作，控制环境与气候风险。"
+    },
+    {
+        "question": "推动形成绿色生活方式的校园实践不包括？\nA. 光盘行动\nB. 低碳出行\nC. 高能耗寝室竞赛\nD. 垃圾分类",
+        "correct_answer": "C",
+        "explanation": "高能耗竞赛与绿色理念相悖。"
+    },
+    {
+        "question": "生态文明考核评价机制的导向是？\nA. 唯GDP\nB. 多维度考核生态环境成效\nC. 只看投资额\nD. 只看短期指标",
+        "correct_answer": "B",
+        "explanation": "将生态指标纳入评价体系，形成正确导向。"
+    },
+    {
+        "question": "“自然恢复为主”意味着？\nA. 过度工程化\nB. 尊重自然过程、少干预\nC. 全靠自然自愈\nD. 人工替代自然",
+        "correct_answer": "B",
+        "explanation": "在必要工程支撑下优先发挥自然自我修复力。"
+    },
+    {
+        "question": "绿色低碳生活的重点领域通常不含？\nA. 衣食住行\nB. 能源使用\nC. 废弃物处理\nD. 天文观测",
+        "correct_answer": "D",
+        "explanation": "天文观测不是绿色生活的重点消费领域。"
+    },
+    {
+        "question": "推动绿色产业发展的产业政策应？\nA. 鼓励高耗能落后产能\nB. 引导技术升级与绿色替代\nC. 稳定高排放产能\nD. 弱化环保要求",
+        "correct_answer": "B",
+        "explanation": "通过政策引导实现绿色替代与产业升级。"
+    },
+    {
+        "question": "生态文明与高质量发展的关系是？\nA. 相互矛盾\nB. 二者统一于绿色转型\nC. 互不影响\nD. 仅口号",
+        "correct_answer": "B",
+        "explanation": "高质量发展以绿色为底色，二者相辅相成。"
+    },
+    {
+        "question": "关于公众参与环境治理，下列正确的是？\nA. 无需信息公开\nB. 环评公众参与、公益诉讼等\nC. 公众意见无价值\nD. 禁止社会组织参与",
+        "correct_answer": "B",
+        "explanation": "公众参与提升决策科学性与治理合力。"
+    },
+    {
+        "question": "“生态文明体制改革”不包括以下哪项？\nA. 自然资源资产管理体制\nB. 空气质量监测体系\nC. 生态环境损害赔偿\nD. 放弃排污许可制度",
+        "correct_answer": "D",
+        "explanation": "排污许可是环境管理核心制度之一。"
+    },
+    {
+        "question": "形成绿色生产方式的企业优先行动是？\nA. 建立环境管理体系\nB. 增加“三废”排放\nC. 降低环保投入\nD. 忽视合规要求",
+        "correct_answer": "A",
+        "explanation": "体系化管理有助于持续改进与合规运营。"
+    },
+    {
+        "question": "关于“生态产品价值实现”，错误的是？\nA. 通过市场化机制转化生态价值\nB. 发展生态产业与服务\nC. 不需要产权制度支撑\nD. 生态补偿与交易机制",
+        "correct_answer": "C",
+        "explanation": "价值实现离不开产权与制度安排。"
+    },
+    {
+        "question": "以下哪项不是“海绵城市”目标？\nA. 渗、滞、蓄、净、用、排\nB. 缓解内涝\nC. 提升雨水资源利用\nD. 全面硬化排水",
+        "correct_answer": "D",
+        "explanation": "海绵城市反对简单硬化，强调自然蓄排。"
+    },
+    {
+        "question": "推进“近零碳园区”的关键措施是？\nA. 高碳能源集中\nB. 分布式可再生+储能+智慧用能\nC. 弱化能耗强度控制\nD. 只看绿化率",
+        "correct_answer": "B",
+        "explanation": "综合能源系统与数字化管控是核心。"
+    },
+    {
+        "question": "生态文明建设中“谁污染谁治理”的制度属性是？\nA. 道德约束\nB. 法律与经济双重约束\nC. 宣传口号\nD. 临时倡议",
+        "correct_answer": "B",
+        "explanation": "通过法律与经济手段落实主体责任。"
+    },
+    {
+        "question": "关于“碳市场”，下列正确的是？\nA. 与减排无关\nB. 以配额交易激励减排\nC. 只增加企业成本\nD. 无需监测核查",
+        "correct_answer": "B",
+        "explanation": "通过价格信号推动企业优化减排成本。"
+    },
+    {
+        "question": "“生态优先、绿色发展”的空间格局体现为？\nA. 开发边界无限扩张\nB. 生产、生活、生态空间优化\nC. 城市无序蔓延\nD. 占用基本农田",
+        "correct_answer": "B",
+        "explanation": "优化“三生”空间格局，守住生态底线。"
+    },
+    {
+        "question": "推进农村人居环境整治的重点不包括？\nA. 生活污水治理\nB. 垃圾分类与资源化\nC. 畜禽养殖污染治理\nD. 扩大粗放式养殖",
+        "correct_answer": "D",
+        "explanation": "应控制面源污染，提升农村生态环境质量。"
+    },
+    {
+        "question": "“生态文明法治保障”中不属于法律责任的是？\nA. 行政责任\nB. 民事责任\nC. 刑事责任\nD. 道歉电话",
+        "correct_answer": "D",
+        "explanation": "法律责任以行政、民事、刑事等形式体现。"
+    },
+    {
+        "question": "提升城市韧性的关键不是？\nA. 海绵设施与防洪排涝\nB. 能源与交通多元冗余\nC. 完善应急预案\nD. 忽视气候风险评估",
+        "correct_answer": "D",
+        "explanation": "应重视气候风险，完善韧性基础设施。"
+    },
+    {
+        "question": "推动绿色电力消费的有效机制是？\nA. 绿电交易与证书\nB. 人工统计\nC. 仅口头承诺\nD. 增强高碳电源比重",
+        "correct_answer": "A",
+        "explanation": "通过交易与证书机制实现可追溯与激励。"
+    },
+    {
+        "question": "“人与自然和谐共生的现代化”强调？\nA. 先污染后治理\nB. 在现代化进程中守住生态底线\nC. 生态让位速度\nD. 不设约束",
+        "correct_answer": "B",
+        "explanation": "现代化要与生态文明同频共振。"
+    },
+    {
+        "question": "推动绿色数据中心的关键指标是？\nA. PUE能效指标降低\nB. 机房照明增亮\nC. 服务器空转\nD. 提高柴油机使用",
+        "correct_answer": "A",
+        "explanation": "PUE越低代表能源利用效率越高。"
+    },
+    {
+        "question": "“生态扶贫（巩固拓展成果）”的内在逻辑是？\nA. 脱贫与生态相互冲突\nB. 通过生态修复、岗位等实现增收\nC. 完全依赖补贴\nD. 忽视产业发展",
+        "correct_answer": "B",
+        "explanation": "以生态保护带动就业与产业，促进增收。"
+    },
+    {
+        "question": "推进绿色消费金融，不包括？\nA. 绿色信贷\nB. 绿色保险\nC. 绿色基金\nD. 高碳奖励贷款",
+        "correct_answer": "D",
+        "explanation": "应将金融资源配置到绿色低碳领域。"
+    },
+    {
+        "question": "“构建人类命运共同体”在生态领域的实践是？\nA. 绿色技术共享与合作\nB. 设置技术壁垒排他\nC. 只看本国利益\nD. 放弃国际规则",
+        "correct_answer": "A",
+        "explanation": "通过合作共享推动全球绿色转型。"
+    },
+    {
+        "question": "推进土壤污染防治的源头措施是？\nA. 加强农业投入品管控\nB. 增施化肥农药\nC. 任意堆放固废\nD. 随意排放污水灌溉",
+        "correct_answer": "A",
+        "explanation": "从投入品管控源头减少土壤污染。"
+    },
+    {
+        "question": "塑造绿色国民经济核算体系的意义是？\nA. 忽略生态成本\nB. 反映资源环境约束与生态价值\nC. 只算GDP\nD. 只算财政收支",
+        "correct_answer": "B",
+        "explanation": "将生态成本与价值纳入核算，引导决策。"
+    },
+    {
+        "question": "推进绿色物流的有效举措是？\nA. 空载率提升\nB. 冷链节能与多式联运\nC. 低效调度\nD. 过度包装",
+        "correct_answer": "B",
+        "explanation": "通过技术与组织优化降低碳排与耗能。"
+    },
+    {
+        "question": "“严格执法+重典治污”的目的在于？\nA. 降低违法成本\nB. 形成震慑和规范\nC. 为违规开绿灯\nD. 放弃合规边界",
+        "correct_answer": "B",
+        "explanation": "提升违法代价，促使主体守法合规。"
+    },
+    {
+        "question": "生态文明宣传教育不应？\nA. 入教材、进课堂、进社区\nB. 结合实践活动\nC. 传播科学理念与方法\nD. 制造恐慌与谣言",
+        "correct_answer": "D",
+        "explanation": "应科学传播，反对夸大与不实信息。"
+    },
+    {
+        "question": "全球生物多样性框架的核心目标是？\nA. 扩大物种灭绝\nB. 逆转生物多样性丧失趋势\nC. 允许任意开发\nD. 降低保护投入",
+        "correct_answer": "B",
+        "explanation": "通过保护与可持续利用扭转丧失趋势。"
+    },
+    {
+        "question": "实施“节水优先”城市策略的措施不包括？\nA. 再生水利用\nB. 漏损控制\nC. 价格杠杆\nD. 任意取用地下水",
+        "correct_answer": "D",
+        "explanation": "取用地下水需严格管控，防止过度开采。"
+    },
+    {
+        "question": "“用最严格制度保护生态环境”的治理闭环不包括？\nA. 立法\nB. 执法\nC. 司法\nD. 随机性处置",
+        "correct_answer": "D",
+        "explanation": "应形成立法—执法—司法—守法的闭环。"
+    },
+    {
+        "question": "绿色低碳技术推广的主要障碍通常是？\nA. 初期成本与规模化\nB. 技术无效\nC. 公众反对率高\nD. 完全无政策支持",
+        "correct_answer": "A",
+        "explanation": "初期成本与扩散路径常构成推广门槛。"
+    },
+    {
+        "question": "构建生态安全屏障的重要区域不包括？\nA. 重点生态功能区\nB. 风沙源治理区\nC. 水源涵养地\nD. 重度污染排放聚集区",
+        "correct_answer": "D",
+        "explanation": "生态屏障应布局在关键生态区而非污染集中区。"
+    },
+    {
+        "question": "推动全球可持续发展的关键合作机制是？\nA. 多边主义与国际协定\nB. 单边制裁\nC. 贸易战\nD. 零和博弈",
+        "correct_answer": "A",
+        "explanation": "通过多边合作协定促进共同进步。"
+    },
+    {
+        "question": "生态文明背景下的企业社会责任不包括？\nA. 合规排放\nB. 节能减排目标\nC. 绿色供应链管理\nD. 加大污染转移",
+        "correct_answer": "D",
+        "explanation": "污染转移违背企业绿色责任。"
+    },
+    {
+        "question": "推进绿色乡村建设的文化路径是？\nA. 生态文明乡风培育\nB. 奢侈风气\nC. 大操大办\nD. 过度消费",
+        "correct_answer": "A",
+        "explanation": "以绿色价值观塑造文明乡风。"
+    },
+    {
+        "question": "绿色消费的政策工具不包括？\nA. 信息标识（能效、水效）\nB. 绿色采购\nC. 有害产品补贴\nD. 消费端激励",
+        "correct_answer": "C",
+        "explanation": "应通过标识与激励引导绿色选择，非鼓励有害产品。"
+    },
+    {
+        "question": "“生态兴则文明兴”在历史上的启示是？\nA. 生态退化常伴文明衰落\nB. 文明与生态无关\nC. 只取决于战争\nD. 取决于艺术水平",
+        "correct_answer": "A",
+        "explanation": "生态基础动摇往往引发文明危机。"
+    },
+    {
+        "question": "构建现代环境治理体系的技术底座是？\nA. 大数据、物联网、人工智能\nB. 手工台账\nC. 人工抽检为主\nD. 完全无监测",
+        "correct_answer": "A",
+        "explanation": "数字化智能化提升治理精准性与效率。"
+    },
+    {
+        "question": "推动绿色建筑不包含？\nA. 被动式节能设计\nB. 可再生能源利用\nC. 高效设备\nD. 取消节能标准",
+        "correct_answer": "D",
+        "explanation": "应提升标准而非取消。"
+    },
+    {
+        "question": "“绿水青山就是金山银山”的价值实现更需要？\nA. 生态品牌建设\nB. 生态破坏换地租\nC. 以环境换增长\nD. 无序旅游开发",
+        "correct_answer": "A",
+        "explanation": "品牌化能提升生态产品溢价与可持续收益。"
+    },
+    {
+        "question": "推进“蓝天保卫战”的重点不包含？\nA. 工业污染治理\nB. 交通减排\nC. 扬尘控制\nD. 增加高硫燃料使用",
+        "correct_answer": "D",
+        "explanation": "应减少高硫燃料使用，控制多源污染。"
+    },
+    {
+        "question": "落实“河湖长制”的主要目的在于？\nA. 强化责权到人、协同治理\nB. 只做记录\nC. 仅象征意义\nD. 切断流域联系",
+        "correct_answer": "A",
+        "explanation": "明确责任主体，推动系统治水。"
+    },
+    {
+        "question": "“自然资源统一监管”的优势是？\nA. 多头分治\nB. 统一规划、统一保护、统一修复\nC. 降低协调性\nD. 仅重开发",
+        "correct_answer": "B",
+        "explanation": "统一监管提高系统性和协同性。"
+    },
+    {
+        "question": "推进绿色消费中的“减量化”体现为？\nA. 过度包装\nB. 二次利用、简约包装\nC. 以一次性为主\nD. 盲目囤积",
+        "correct_answer": "B",
+        "explanation": "通过减量与再利用降低资源消耗。"
+    },
+    {
+        "question": "“生态文明建设”战略地位体现为？\nA. 边缘性工作\nB. 中央任务、系统工程\nC. 临时性任务\nD. 部门性项目",
+        "correct_answer": "B",
+        "explanation": "是关乎中华民族永续发展的根本大计。"
+    },
+    {
+        "question": "推进“美丽中国”评估更关注？\nA. 公众获得感\nB. 生态环境质量改善\nC. 绿色发展水平\nD. 以上皆是",
+        "correct_answer": "D",
+        "explanation": "综合性指标体系评估多维成效。"
+    },
+    {
+        "question": "应对气候变化的适应策略不包括？\nA. 城市排涝提升\nB. 农业抗旱减灾\nC. 加强极端天气预警\nD. 忽视风险",
+        "correct_answer": "D",
+        "explanation": "适应需系统提升抵御能力，非忽视。"
+    },
+    {
+        "question": "“双碳”背景下产业政策的转向是？\nA. 高碳锁定\nB. 提升绿色技术与产业比重\nC. 强化落后产能\nD. 以量取胜",
+        "correct_answer": "B",
+        "explanation": "通过政策引导加快绿色产业化进程。"
+    },
+    {
+        "question": "生态文明教育的重点人群不包括？\nA. 青少年\nB. 企业管理者\nC. 公众\nD. 仅科研人员",
+        "correct_answer": "D",
+        "explanation": "面向全社会普及生态文明理念与能力。"
+    },
+    {
+        "question": "“系统治理、源头防治、综合施策”强调的问题特性是？\nA. 线性单因\nB. 复杂系统性\nC. 无关联\nD. 静态不变",
+        "correct_answer": "B",
+        "explanation": "环境问题具有系统性与耦合性，需综合治理。"
+    },
+    {
+        "question": "推动绿色创新的平台不包括？\nA. 国家重点实验室\nB. 产业创新中心\nC. 绿色技术交易所\nD. 非法排污网络",
+        "correct_answer": "D",
+        "explanation": "应依托合规平台促进技术创新扩散。"
+    },
+    {
+        "question": "“生态环境损害赔偿磋商”的意义是？\nA. 逃避责任\nB. 提高修复效率、节约诉讼成本\nC. 无约束力\nD. 替代修复",
+        "correct_answer": "B",
+        "explanation": "在法治框架下通过磋商促成修复与赔偿。"
+    },
+    {
+        "question": "推动全球可持续能源转型的关键不包括？\nA. 可再生能源\nB. 能源效率\nC. 化石能源补贴扩大\nD. 智能电网",
+        "correct_answer": "C",
+        "explanation": "应减少对化石能源的扭曲性补贴。"
+    },
+    {
+        "question": "“禁止违法占用自然保护地”的制度抓手是？\nA. 分区分级管控\nB. 放松准入\nC. 只备案不审批\nD. 以罚代管",
+        "correct_answer": "A",
+        "explanation": "严格分区与准入确保保护目标实现。"
+    },
+    {
+        "question": "绿色金融“避免漂绿”的关键是？\nA. 统一标准与信息披露\nB. 只看宣传\nC. 自我标榜\nD. 不做核查",
+        "correct_answer": "A",
+        "explanation": "通过标准与披露防止名不副实。"
+    },
+    {
+        "question": "推进“生态文明示范区”建设的价值是？\nA. 形成可复制经验\nB. 只为形象工程\nC. 脱离实际\nD. 随机试验",
+        "correct_answer": "A",
+        "explanation": "以点带面，总结推广制度与技术路径。"
+    },
+    {
+        "question": "推进“绿色低碳循环发展经济体系”的核心词不含？\nA. 绿色\nB. 低碳\nC. 循环\nD. 高耗",
+        "correct_answer": "D",
+        "explanation": "高耗与体系目标相违背。"
+    },
+    {
+        "question": "“生态文明国际合作”的重点不包括？\nA. 绿色技术合作\nB. 生态治理经验交流\nC. 双边与多边协作\nD. 排他性封锁",
+        "correct_answer": "D",
+        "explanation": "应通过开放合作实现共赢。"
+    },
+    {
+        "question": "生态环境监测网络建设的目标是？\nA. 数据缺失\nB. 全覆盖、全要素、全天候\nC. 只抽样\nD. 不联网",
+        "correct_answer": "B",
+        "explanation": "构建立体化、智能化监测网络支撑治理。"
+    },
+    {
+        "question": "“美丽中国”社会参与机制的核心是？\nA. 政府独自完成\nB. 企业、公众、社会组织协同\nC. 排斥公众\nD. 弱化企业责任",
+        "correct_answer": "B",
+        "explanation": "多元主体协同共治共建共享。"
+    },
+    {
+        "question": "推进工业园区循环化改造的措施不含？\nA. 资源能源梯级利用\nB. 余热余压回收\nC. 共生网络构建\nD. 放任无序排放",
+        "correct_answer": "D",
+        "explanation": "应构建工业共生、清洁生产体系。"
+    },
+    {
+        "question": "应对全球塑料垃圾危机的多边行动是？\nA. 各自为政\nB. 制定全球塑料公约与行动框架\nC. 放任市场\nD. 只靠清扫",
+        "correct_answer": "B",
+        "explanation": "通过国际规则协作应对跨境污染。"
+    },
+    {
+        "question": "“绿色建筑材料”推广侧重？\nA. 高污染材料\nB. 低碳环保与可循环\nC. 只看价格\nD. 忽视性能",
+        "correct_answer": "B",
+        "explanation": "推广低碳、健康、耐久、可循环材料。"
+    },
+    {
+        "question": "生态环境损害司法鉴定的作用是？\nA. 装点门面\nB. 明确损害事实与修复费用\nC. 替代审判\nD. 无用",
+        "correct_answer": "B",
+        "explanation": "为裁判提供科学证据依据。"
+    },
+    {
+        "question": "“双碳”下企业转型优先路线是？\nA. 提高能耗强度\nB. 绿色工艺、数字化管理、清洁能源替代\nC. 推迟减排\nD. 增配高碳设备",
+        "correct_answer": "B",
+        "explanation": "技术与管理双轮驱动实现降碳增效。"
+    },
+    {
+        "question": "建设“美丽中国”的评价不应忽视？\nA. 生态质量\nB. 资源效率\nC. 公众满意度\nD. 片面GDP增速",
+        "correct_answer": "D",
+        "explanation": "应突出绿色、高质量、人民满意的指标。"
+    },
+    {
+        "question": "推动全球可持续发展融资的重点是？\nA. “棕色”资产扩张\nB. 提升绿色项目可得性与透明度\nC. 降低信息披露\nD. 拒绝标准",
+        "correct_answer": "B",
+        "explanation": "通过标准与披露引导资金投向绿色领域。"
+    },
+    {
+        "question": "生态修复项目绩效评估更应关注？\nA. 短期景观效果\nB. 生态功能提升与长期稳定性\nC. 施工速度\nD. 宣传数量",
+        "correct_answer": "B",
+        "explanation": "关注生态系统结构—功能—服务三位一体成效。"
+    },
+    {
+        "question": "低碳城市试点的关键任务不包括？\nA. 能源结构优化\nB. 建筑与交通减排\nC. 碳排放监测核算\nD. 放松规划管控",
+        "correct_answer": "D",
+        "explanation": "应通过规划与政策加强约束与引导。"
+    },
+    {
+        "question": "推动形成绿色生活方式的媒体责任是？\nA. 夸大其词\nB. 科学传播与行为引导\nC. 谣言传播\nD. 仅娱乐化",
+        "correct_answer": "B",
+        "explanation": "媒体应普及科学知识、倡导绿色行为。"
+    },
+    {
+        "question": "生态文明建设中的“底线思维”体现为？\nA. 不设边界\nB. 守住生态功能与环境质量底线\nC. 任意突破红线\nD. 以偏概全",
+        "correct_answer": "B",
+        "explanation": "确保生态安全与环境质量不退步。"
+    },
+    {
+        "question": "推进“负面清单+正面清单”的管控方式意在？\nA. 管理随意化\nB. 明确禁止与鼓励事项，提高可预期性\nC. 降低透明度\nD. 加大模糊空间",
+        "correct_answer": "B",
+        "explanation": "清单化管理提高规范性与执行力。"
+    },
+    {
+        "question": "“碳足迹”管理关注？\nA. 仅生产环节\nB. 产品全生命周期温室气体排放\nC. 仅运输\nD. 仅使用阶段",
+        "correct_answer": "B",
+        "explanation": "全生命周期核算有助于系统减排。"
+    },
+    {
+        "question": "全球生态文明进程中“技术转让”的意义是？\nA. 扩大差距\nB. 降低绿色转型门槛\nC. 只利发达国家\nD. 无关痛痒",
+        "correct_answer": "B",
+        "explanation": "通过技术合作缩小发展鸿沟，共促转型。"
+    },
+    {
+        "question": "生态文明建设中的“市场机制”不包括？\nA. 排污权交易\nB. 碳排放交易\nC. 生态补偿交易\nD. 任意排放",
+        "correct_answer": "D",
+        "explanation": "市场机制以规则和价格信号约束排放。"
+    },
+    {
+        "question": "推进“清洁取暖”的主要目标是？\nA. 增加散煤使用\nB. 降低冬季大气污染与碳排\nC. 仅提高温度\nD. 忽视成本",
+        "correct_answer": "B",
+        "explanation": "替代散煤、提升能效、减少污染与碳排。"
+    },
+    {
+        "question": "“自然教育与生态研学”的作用是？\nA. 增强公众生态意识与实践能力\nB. 增加野外破坏\nC. 与保护相悖\nD. 无教育意义",
+        "correct_answer": "A",
+        "explanation": "以体验式学习培育生态文明理念。"
+    },
+    {
+        "question": "“绿色低碳技术目录”的功能是？\nA. 干扰市场\nB. 引导技术研发与应用方向\nC. 仅用于展示\nD. 提高审批难度",
+        "correct_answer": "B",
+        "explanation": "目录提供政策与市场导向，促进推广。"
+    },
+    {
+        "question": "“生态文明体制”中的“多元共治”不包括？\nA. 政府\nB. 企业\nC. 社会组织与公众\nD. 排除公众",
+        "correct_answer": "D",
+        "explanation": "强调多主体协同，共同治理。"
+    },
+    {
+        "question": "建设美丽中国的时间维度强调？\nA. 一年见效\nB. 立足长远、久久为功\nC. 短期运动式治理\nD. 数据造好看",
+        "correct_answer": "B",
+        "explanation": "生态文明建设是长期性、系统性工程。"
+    },
+    {
+        "question": "“生态环境信息强制披露”的意义是？\nA. 增加负担无益\nB. 提升透明度与市场约束\nC. 与投资无关\nD. 可随意缺失",
+        "correct_answer": "B",
+        "explanation": "披露促进投资者与社会监督，倒逼改进。"
+    },
+    {
+        "question": "“绿色电力证书（GEC）”的作用是？\nA. 证明化石电力\nB. 证明可再生电力属性\nC. 与减排无关\nD. 仅国内无用",
+        "correct_answer": "B",
+        "explanation": "证书为绿电消费与减排提供可追溯凭证。"
+    },
+    {
+        "question": "推动“全球减排协同”的关键是？\nA. 数据不共享\nB. 碳核算方法学与数据共享\nC. 忽视统计\nD. 单边行动",
+        "correct_answer": "B",
+        "explanation": "统一方法与数据共享提升透明度与协同。"
+    },
+    {
+        "question": "“生态文明建设是功在当代、利在千秋”的含义是？\nA. 短期行为\nB. 长期系统性工程、代际公平\nC. 与后代无关\nD. 可随时中止",
+        "correct_answer": "B",
+        "explanation": "强调可持续与代际责任。"
+    },
+    {
+        "question": "“绿色出行”优先级排序更合理的是？\nA. 步行/骑行—公交—共享—私家车\nB. 私家车—公交—步行\nC. 网约车—货车\nD. 摩托—私车—公交",
+        "correct_answer": "A",
+        "explanation": "优先低碳方式，减少私人机动化依赖。"
+    },
+    {
+        "question": "“生态文明与现代产业体系”的耦合点是？\nA. 高污染高耗\nB. 绿色低碳高效\nC. 资源浪费\nD. 技术落后",
+        "correct_answer": "B",
+        "explanation": "以绿色低碳构筑竞争力与可持续性。"
+    },
+    {
+        "question": "“绿色数字化转型”不含以下哪项？\nA. 工业能效监测\nB. 碳管理平台\nC. 供应链可视化\nD. 提高纸质报表比例",
+        "correct_answer": "D",
+        "explanation": "应以数字化替代低效的纸质流程。"
+    },
+    {
+        "question": "“生态影响评价（EIA/SEA）”的本质是？\nA. 事后评估\nB. 事前识别与规避生态风险\nC. 与生态无关\nD. 仅形式审查",
+        "correct_answer": "B",
+        "explanation": "在决策前识别、减缓、替代生态影响。"
+    },
+    {
+        "question": "“碳中和”阶段的剩余排放主要通过何种方式抵消？\nA. 扩大排放\nB. 碳汇与高质量减排信用\nC. 统计剔除\nD. 名义抵消",
+        "correct_answer": "B",
+        "explanation": "通过森林碳汇、CCUS及可信减排信用抵消。"
+    },
+    {
+        "question": "“生态文明示范创建”的评价不应仅看？\nA. 体制机制创新\nB. 环境质量改善\nC. 公众满意度\nD. 宣传数量",
+        "correct_answer": "D",
+        "explanation": "应重实效与制度化成果。"
+    },
+    {
+        "question": "“绿色供应链中的溯源管理”作用是？\nA. 增加不确定性\nB. 提升透明度、识别高排放环节\nC. 无助于减排\nD. 只为营销",
+        "correct_answer": "B",
+        "explanation": "溯源可定位改进点，促进协同减排。"
+    },
+    {
+        "question": "全球生态文明治理的公平性体现为？\nA. 各国同质目标\nB. 共同但有区别的责任与能力\nC. 让发展中国家承担更多\nD. 历史责任忽视",
+        "correct_answer": "B",
+        "explanation": "考虑历史排放与能力差异，公平分担。"
+    },
+    {
+        "question": "“生态兴则文明兴”在校园治理的落地是？\nA. 校园高耗能运行\nB. 绿色校园创建与节能管理\nC. 无视垃圾分类\nD. 随意排污",
+        "correct_answer": "B",
+        "explanation": "通过制度化节能与绿色管理提升校园文明。"
+    },
+    {
+        "question": "“人与自然和谐共生”的底线约束是？\nA. 生态红线\nB. 财政赤字红线\nC. 贸易逆差线\nD. 价格下限",
+        "correct_answer": "A",
+        "explanation": "生态红线守住国家生态安全底线。"
+    },
+    {
+        "question": "建设“美丽中国”的文化支撑是？\nA. 生态文化与绿色价值观\nB. 奢侈文化\nC. 消费主义至上\nD. 享乐主义",
+        "correct_answer": "A",
+        "explanation": "以生态文化引领全社会绿色转型。"
+    },
+    {
+        "question": "全球可持续发展中“水—粮—能源”纽带治理强调？\nA. 孤立管理\nB. 协同优化与综合调配\nC. 只保能源\nD. 只保粮食",
+        "correct_answer": "B",
+        "explanation": "跨部门协同实现系统效率最优。"
+    },
+    {
+        "question": "推动“绿色消费升级”的关键是？\nA. 绿色供给与价格机制\nB. 仅靠宣传\nC. 不提供替代品\nD. 降低质量",
+        "correct_answer": "A",
+        "explanation": "供给侧提升与价格信号共同引导消费升级。"
+    },
+    {
+        "question": "“城市近自然保护地”建设的意义是？\nA. 与公众隔离\nB. 提升城市生物多样性与生态服务\nC. 只作景观\nD. 不可进入",
+        "correct_answer": "B",
+        "explanation": "近自然空间提升生态功能与公众福祉。"
+    }
+]
