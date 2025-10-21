@@ -69,6 +69,24 @@
       </div>
 
       <div v-else-if="!quizSubmitted" class="quiz-questions">
+        <!-- 答题卡 -->
+        <div class="answer-sheet">
+          <h3>答题卡</h3>
+          <div class="answer-grid">
+            <div 
+              v-for="(answer, index) in quizAnswers" 
+              :key="index"
+              :class="['answer-box', { 
+                'answered': answer !== '', 
+                'current': index === currentQuestionIndex 
+              }]"
+              @click="jumpToQuestion(index)"
+            >
+              {{ index + 1 }}
+            </div>
+          </div>
+        </div>
+
         <div class="progress">
           题目 {{ currentQuestionIndex + 1 }}/{{ quizQuestions.length }}
         </div>
@@ -104,8 +122,7 @@
             </button>
             <button 
               class="submit-quiz-btn" 
-              @click="submitQuiz"
-              :disabled="!canSubmitQuiz"
+              @click="confirmSubmitQuiz"
             >
               提交答卷
             </button>
@@ -179,9 +196,8 @@ export default {
     currentQuizQuestion() {
       return this.quizQuestions[this.currentQuestionIndex] || {}
     },
-    canSubmitQuiz() {
-      return this.quizAnswers.length === this.quizQuestions.length &&
-             !this.quizAnswers.includes(undefined)
+    unansweredCount() {
+      return this.quizAnswers.filter(answer => answer === '').length
     }
   },
   methods: {
@@ -273,7 +289,8 @@ export default {
         if (data.success) {
           this.quizId = data.data.quiz_id
           this.quizQuestions = data.data.questions
-          this.quizAnswers = new Array(this.quizQuestions.length)
+          // 初始化为空字符串数组，而不是 undefined
+          this.quizAnswers = new Array(this.quizQuestions.length).fill('')
           this.quizStarted = true
           this.currentQuestionIndex = 0
         }
@@ -291,10 +308,24 @@ export default {
         this.currentQuestionIndex++
       }
     },
+    jumpToQuestion(index) {
+      this.currentQuestionIndex = index
+    },
+    confirmSubmitQuiz() {
+      // 检查是否有未答题
+      if (this.unansweredCount > 0) {
+        const confirmed = confirm(
+          `还有 ${this.unansweredCount} 道题目未作答，未作答的题目将按答案错误处理。\n\n是否确认提交？`
+        )
+        if (!confirmed) {
+          return
+        }
+      }
+      this.submitQuiz()
+    },
     async submitQuiz() {
-      if (!this.canSubmitQuiz) return
-      
       try {
+        // 直接提交答案数组（空字符串表示未答题，后端会判定为错误）
         const response = await fetch(`${API_BASE}/quiz/submit`, {
           method: 'POST',
           headers: {
@@ -518,6 +549,66 @@ export default {
   margin-bottom: 1rem;
 }
 
+/* 答题卡样式 */
+.answer-sheet {
+  position: fixed;
+  top: 6rem;
+  right: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  min-width: 200px;
+}
+
+.answer-sheet h3 {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 0.5rem;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.answer-box {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: #f5f5f5;
+  color: #999;
+}
+
+.answer-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.answer-box.answered {
+  background: #c8e6c9;
+  color: #2e7d32;
+  border-color: #4CAF50;
+}
+
+.answer-box.current {
+  border-color: #2196F3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
 .navigation-buttons {
   display: flex;
   gap: 1rem;
@@ -609,6 +700,22 @@ export default {
   
   .navigation-buttons {
     flex-direction: column;
+  }
+
+  /* 移动端答题卡调整 */
+  .answer-sheet {
+    position: static;
+    margin: 0 auto 1.5rem;
+    max-width: 300px;
+  }
+
+  .answer-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .answer-box {
+    width: 40px;
+    height: 40px;
   }
 }
 </style>

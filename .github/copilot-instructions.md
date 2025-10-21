@@ -1,57 +1,161 @@
-<!-- .github/copilot-instructions.md -->
-# Copilot / AI agent 指令 — greengold
+# Copilot / AI Agent Instructions — GreenGold
 
-下面的指令旨在帮助 AI 编码代理快速在本仓库中变得有生产力。内容基于可发现的代码和配置，仅记录可证实的约定与工作流。
+This is a **full-stack web project** showcasing Anji County's ecological transformation story ("两山理论" / "Green Mountains are Golden Mountains"). The repo contains a **Vue 3 frontend** (`green-gold/`) and a **FastAPI backend** (`server/`) for an AI-powered quiz system.
 
-- 快速概览：这是一个 Vue 3 + Vite 的单页面前端项目，入口文件 `src/main.js`，路由定义在 `src/router.js`，主要页面组件在 `src/components/`（例如 `StartPage.vue`、`MainPage.vue`、`AnjiTimeline.vue`）。静态资源放在 `public/`（注意：视频在 `public/videos`，组件中通过 `/videos/<name>.mp4` 引用）。
+## Architecture Overview
 
-- 目标任务示例（可直接执行）：
-  - 修复组件内逻辑或样式（编辑 `src/components/*.vue`）。
-  - 添加新路由（修改 `src/router.js` 并新增组件于 `src/components/`）。
-  - 添加静态媒体：把视频放到 `green-gold/public/videos/` 并在组件里使用 `/videos/<file>` 路径。
+**Frontend** (`green-gold/`): Vue 3 SPA with Vue Router, built with Vite  
+**Backend** (`server/`): FastAPI REST API serving quiz questions from a static JSON bank  
+**Data Flow**: Frontend fetches questions via HTTP → Backend randomly selects from `questions_data.json` → Frontend displays and validates answers
 
-- 常用命令（在项目根 `green-gold/` 下执行）：
-  - 开发服务器：`npm run dev`（使用 Vite）
-  - 生产构建：`npm run build`
-  - 本地预览构建结果：`npm run preview`
+### Key Routes & Components
+- `/` → `StartPage.vue`: Landing page with "开始探索" button (uses background image from `src/assets/images/1.png`)
+- `/main` → `MainPage.vue`: Navigation hub linking to three sections (Anji timeline, knowledge, quiz)
+- `/anji-timeline` → `AnjiTimeline.vue`: Interactive timeline with video modals for 2003/2005/2010s/2021 milestones
+- `/quiz` → `QuizPage.vue`: Two-mode quiz system
+  - **Practice mode**: Single question with instant feedback
+  - **Challenge mode**: 10 questions with answer sheet card showing progress (light green = answered, light gray = unanswered)
+    - Answer sheet in top-right allows jumping between questions
+    - Warns if submitting with unanswered questions (treats blank answers as incorrect)
 
-- 重要文件参考（说明为什么重要和常见改动点）：
-  - `package.json` — 定义脚本（dev/build/preview）和依赖（vue, vue-router, vite）。
-  - `vite.config.js` — Vite 插件配置；通常无需大改，除非添加特殊 Loader 或静态资源处理。 
-  - `src/main.js` — Vue app 创建、全局样式 `style.css` 引入和路由挂载点。
-  - `src/router.js` — 路由表；添加新页面请在此注册路径/组件。
-  - `src/components/*.vue` — 视图与交互逻辑：
-    - `StartPage.vue`：起始页，按钮使用 `this.$router.push('/main')` 跳转。
-    - `MainPage.vue`：入口导航，推荐在此处理全局导航逻辑与事件埋点。
-    - `AnjiTimeline.vue`：时序组件，包含视频 modal 与 `videoData` 列表；视频路径使用绝对 `/videos/...` 指向 `public/videos`。
+### Critical Static Asset Convention
+- **Videos**: Store in `green-gold/public/videos/` and reference as `/videos/<name>.mp4` (absolute path)  
+  Example: `AnjiTimeline.vue` uses `videoData[].src: '/videos/2003.mp4'`
+- **Images**: Import from `green-gold/src/assets/images/` using relative imports  
+  Example: `StartPage.vue` uses `background-image: url('../assets/images/1.png')`
 
-- 静态资源与约定：
-  - images 与小静态文件放 `green-gold/src/assets/images/`；大媒体（视频等）应放在 `green-gold/public/videos/`，组件直接使用 `/videos/<name>.mp4`。
-  - 组件中对外部资源的引用常为相对 import（图片）或绝对 `/` 路径（视频）。修改时请确认路径与构建输出一致。
+## Developer Workflows
 
-- 路由与导航模式（可作为代码示例提供）：
-  - 动态跳转：使用 `this.$router.push('/main')` 或 `this.$router.push({ path: '/anji-timeline' })`。
-  - 新增页面模式：在 `src/components/` 添加 `Xxx.vue`，在 `src/router.js` 导入并在 routes 数组注册。
+### Frontend Development
+```powershell
+cd green-gold
+npm install          # First time only
+npm run dev          # Start Vite dev server on http://localhost:5173
+npm run build        # Production build to green-gold/dist/
+npm run preview      # Preview production build locally
+```
 
-- 可发现的编码模式与风格：
-  - 单文件组件（SFC）使用 Options API（data/methods），而非 `<script setup>`；因此新增组件建议延续 Options API，除非需要一致迁移。
-  - 组件样式多使用 `scoped`。变更样式时优先编辑对应 `.vue` 文件内的 `<style scoped>`。
-  - 全局样式通过 `src/style.css` 引入；小改可放入组件 scoped 样式以避免影响全局。
+### Backend Development
+```powershell
+cd server
+pip install -r requirements.txt  # First time only
+uvicorn main:app --reload        # Start FastAPI on http://localhost:8000
+```
+**CORS Configuration**: Backend allows `http://localhost:5173` (Vite default). Update `main.py` if frontend port changes.
 
-- 测试与类型：仓库中未包含自动化测试或 TypeScript。不要假定存在测试命令或类型检查。在需要时，可优先添加小型单元/集成测试（建议用 Vitest + Vue Test Utils），但请先征得维护者同意。
+### Environment Setup for Backend
+Create `server/.env` with:
+```env
+DASHSCOPE_API_KEY=your_api_key_here  # Required for AI features (currently unused, questions come from JSON)
+```
+**Note**: Current implementation (`ai_service.py`) reads from `questions_data.json` instead of calling external AI APIs.
 
-- 编辑/PR 指南（agent 在生成更改时的约束）：
-  - 保持现有目录结构与命名；新增静态媒体放 `public/videos/`，新增图片放 `src/assets/images/`。
-  - 尽量在单个组件内完成 UI 变更并保留样式范围（scoped）。
-  - 对于路由变更，更新 `src/router.js` 并在添加页面后手动确认 `index.html` 中挂载点 `id="app"` 的逻辑不受影响。
-  - 在修改多文件（>3 文件）时，分成多个小提交并在 PR 描述里列出影响点（路由、静态资源、样式）。
+## Project-Specific Patterns
 
-- 探索提示（快速定位实现）：
-  - 想找视频列表：打开 `src/components/AnjiTimeline.vue`，搜索 `videoData`。
-  - 想找导航入口：查看 `src/components/StartPage.vue` 和 `src/components/MainPage.vue` 中 router 调用。
+### Vue Component Style
+- Use **Options API** (`data()`, `methods`) not Composition API or `<script setup>`
+- All components use `<style scoped>` for encapsulation
+- Global styles go in `green-gold/src/style.css` (imported in `main.js`)
 
-- 未知/需确认项（请在 PR 或对话中询问维护者）：
-  - 目标浏览器矩阵与性能预算（图片懒加载、WebP 产出、大小阈值）。
-  - 是否允许引入新前端库（例如 GSAP、ECharts、Mapbox）——README 中提到可用，但需确认许可与密钥管理。
+### Router Navigation Pattern
+```javascript
+// Programmatic navigation (used throughout)
+this.$router.push('/main')
+this.$router.push({ path: '/anji-timeline' })
+```
 
-如果本文件有遗漏或不准确的地方，请指出具体部分（例如：资源路径、构建命令或希望的编码风格），我会立刻更新并迭代。 
+### Quiz Question Format (Backend → Frontend)
+Questions in `server/questions_data.json` are stored as **plain text with embedded options**:
+```json
+{
+  "question": "题干内容？\nA. 选项A\nB. 选项B\nC. 选项C\nD. 选项D",
+  "correct_answer": "B",
+  "explanation": "解释文本"
+}
+```
+Frontend (`QuizPage.vue`) parses this using `parseQuestion()` method to extract title and options array.
+
+### API Endpoints (Backend)
+- `GET /api/practice/question` → Returns single question for practice mode
+- `POST /api/practice/check` → Validates answer (body: `{question_id, user_answer}`)
+- `GET /api/quiz/start` → Returns 10 questions for challenge mode (answers hidden)
+- `POST /api/quiz/submit` → Submits quiz answers and returns score
+
+## Common Tasks
+
+### Adding a New Route
+1. Create component in `green-gold/src/components/NewPage.vue`
+2. Import and register in `green-gold/src/router.js`:
+   ```javascript
+   import NewPage from './components/NewPage.vue'
+   const routes = [
+     // ... existing routes
+     { path: '/new-path', component: NewPage }
+   ]
+   ```
+3. Link from navigation (e.g., in `MainPage.vue`):
+   ```javascript
+   goToSection(section) {
+     if (section === 'new') this.$router.push('/new-path')
+   }
+   ```
+
+### Adding Videos to Timeline
+1. Place video file in `green-gold/public/videos/<year>.mp4`
+2. Update `AnjiTimeline.vue` → `videoData` array:
+   ```javascript
+   videoData: [
+     { title: 'YYYY年 - 标题', description: '描述', src: '/videos/<year>.mp4' }
+   ]
+   ```
+3. Add corresponding timeline item in template section
+
+### Modifying Quiz Questions
+Edit `server/questions_data.json` directly (array of question objects). Server will randomly select from this pool on each `/api/practice/question` request.
+
+## Known Limitations & Notes
+
+- **No TypeScript**: Pure JavaScript codebase
+- **No Tests**: No test files or test commands exist
+- **Hardcoded API URL**: `QuizPage.vue` uses `const API_BASE = 'http://localhost:8000/api'` (update for production)
+- **AI Service Not Active**: `ai_service.py` currently bypasses AI and reads from JSON; `config.py` has unused AI model settings
+- **Video Files Not Committed**: `green-gold/public/videos/README.md` exists but actual `.mp4` files must be added manually
+
+## File Structure Reference
+```
+greengold/
+├── green-gold/                  # Frontend (Vue 3 + Vite)
+│   ├── public/
+│   │   └── videos/              # *.mp4 files (referenced as /videos/*)
+│   ├── src/
+│   │   ├── assets/images/       # Images imported in components
+│   │   ├── components/          # All page components (*.vue)
+│   │   ├── App.vue              # Root component
+│   │   ├── main.js              # Vue app entry (imports router + style.css)
+│   │   ├── router.js            # Route definitions
+│   │   └── style.css            # Global styles
+│   ├── index.html               # SPA entry point (<div id="app">)
+│   ├── package.json             # Frontend dependencies (vue, vue-router, vite)
+│   └── vite.config.js           # Vite build config
+├── server/                      # Backend (FastAPI)
+│   ├── main.py                  # FastAPI app + CORS + endpoints
+│   ├── models.py                # Pydantic models (Question, QuizResponse, etc.)
+│   ├── ai_service.py            # Question generation (reads from JSON)
+│   ├── config.py                # Pydantic settings (env vars, unused AI config)
+│   ├── questions_data.json      # Static question bank (867 lines)
+│   └── requirements.txt         # Backend dependencies (fastapi, uvicorn, pydantic v2)
+└── README.md                    # Project concept document (not technical)
+```
+
+## Troubleshooting
+
+**Frontend not connecting to backend?**  
+→ Check CORS settings in `server/main.py` match your frontend URL  
+→ Verify backend is running on port 8000 and frontend on 5173
+
+**Videos not playing?**  
+→ Ensure `.mp4` files exist in `green-gold/public/videos/`  
+→ Check browser console for 404 errors (path must be `/videos/filename.mp4`)
+
+**Question parsing errors?**  
+→ Verify question format in `questions_data.json` matches `题干\nA. ...\nB. ...\nC. ...\nD. ...` pattern 
