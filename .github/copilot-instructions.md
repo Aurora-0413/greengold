@@ -15,8 +15,9 @@ This is a **full-stack web project** showcasing Anji County's ecological transfo
 - `/quiz` → `QuizPage.vue`: Two-mode quiz system
   - **Practice mode**: Single question with instant feedback
   - **Challenge mode**: 10 questions with answer sheet card showing progress (light green = answered, light gray = unanswered)
-    - Answer sheet in top-right allows jumping between questions
+    - Answer sheet in top-right (desktop only, hidden on mobile) allows jumping between questions
     - Warns if submitting with unanswered questions (treats blank answers as incorrect)
+    - Fully responsive design optimized for mobile devices
 
 ### Critical Static Asset Convention
 - **Videos**: Store in `green-gold/public/videos/` and reference as `/videos/<name>.mp4` (absolute path)  

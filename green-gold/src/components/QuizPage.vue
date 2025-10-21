@@ -120,13 +120,14 @@
             >
               下一题
             </button>
-            <button 
-              class="submit-quiz-btn" 
-              @click="confirmSubmitQuiz"
-            >
-              提交答卷
-            </button>
           </div>
+          
+          <button 
+            class="submit-quiz-btn" 
+            @click="confirmSubmitQuiz"
+          >
+            提交答卷
+          </button>
         </div>
       </div>
 
@@ -424,6 +425,19 @@ export default {
   margin: 0 auto;
 }
 
+/* 挑战模式时，为答题卡留出空间 */
+.quiz-questions .question-card {
+  max-width: calc(100% - 280px);
+  margin-right: 260px;
+  margin-left: auto;
+}
+
+@media (min-width: 1400px) {
+  .quiz-questions .question-card {
+    max-width: 900px;
+  }
+}
+
 .question-card h2 {
   color: #2c3e50;
   margin-bottom: 1.5rem;
@@ -609,6 +623,13 @@ export default {
   box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
 }
 
+/* 移动端隐藏答题卡 */
+@media (max-width: 768px) {
+  .answer-sheet {
+    display: none;
+  }
+}
+
 .navigation-buttons {
   display: flex;
   gap: 1rem;
@@ -625,6 +646,12 @@ export default {
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease;
+  outline: none;
+}
+
+.nav-btn:focus {
+  outline: none;
+  border-color: #4CAF50;
 }
 
 .nav-btn:disabled {
@@ -633,8 +660,36 @@ export default {
   cursor: not-allowed;
 }
 
+.nav-btn:hover:not(:disabled) {
+  background: #4CAF50;
+  color: white;
+}
+
 .submit-quiz-btn {
   flex: 2;
+  padding: 0.8rem;
+  border: 2px solid #4CAF50;
+  background: #4CAF50;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+  outline: none;
+}
+
+.submit-quiz-btn:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.submit-quiz-btn:hover {
+  background: #45a049;
+  border-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
 }
 
 .quiz-results {
@@ -687,35 +742,168 @@ export default {
 @media (max-width: 768px) {
   .quiz-container {
     padding: 1rem;
+    padding-top: 4rem;
+  }
+
+  /* 移动端问题卡片恢复居中，不受答题卡影响 */
+  .quiz-questions .question-card {
+    max-width: 100%;
+    margin: 0 auto;
   }
   
+  .quiz-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .mode-selector {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .mode-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
   .question-card {
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .question-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .option-item {
+    padding: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .option-text {
+    line-height: 1.4;
   }
   
   .back-btn {
     top: 1rem;
     left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .progress {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
   }
   
+  /* 移动端导航按钮布局 */
   .navigation-buttons {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
   }
 
-  /* 移动端答题卡调整 */
-  .answer-sheet {
-    position: static;
-    margin: 0 auto 1.5rem;
-    max-width: 300px;
+  .nav-btn {
+    flex: 1;
+    min-width: calc(50% - 0.25rem);
+    padding: 0.7rem 0.5rem;
+    font-size: 0.9rem;
+    background: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    outline: none;
   }
 
-  .answer-grid {
-    grid-template-columns: repeat(5, 1fr);
+  /* 移除移动端按钮的悬停效果 */
+  .nav-btn:hover:not(:disabled) {
+    background: white;
+    color: #4CAF50;
+    border-color: #4CAF50;
+    transform: none;
   }
 
-  .answer-box {
-    width: 40px;
-    height: 40px;
+  .nav-btn:focus:not(:disabled) {
+    outline: none;
+    border-color: #4CAF50;
+    background: white;
+  }
+
+  .nav-btn:active:not(:disabled) {
+    background: #f0f0f0;
+    border-color: #4CAF50;
+  }
+
+  /* 提交按钮移到右上角 */
+  .submit-quiz-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: auto;
+    min-width: 85px;
+    padding: 0.65rem 1.2rem;
+    font-size: 0.9rem;
+    background: #4CAF50;
+    color: white;
+    z-index: 1000;
+    margin-top: 0;
+    flex: none;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+    outline: none;
+    border: 2px solid #4CAF50;
+  }
+
+  .submit-quiz-btn:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+
+  .submit-quiz-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 1px 4px rgba(76, 175, 80, 0.4);
+    border-color: #4CAF50;
+  }
+
+  /* 练习模式按钮 */
+  .submit-btn, .next-btn, .start-btn, .restart-btn {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  /* 结果页面 */
+  .quiz-results {
+    padding: 0 0.5rem;
+  }
+
+  .score {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+  }
+
+  .result-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .result-item h3 {
+    font-size: 1rem;
+  }
+
+  .result-item p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .answer-info {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .explanation {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }
 </style>
