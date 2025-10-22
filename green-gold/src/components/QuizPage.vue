@@ -132,28 +132,32 @@
       </div>
 
       <div v-else class="quiz-results">
-        <h2>答题结果</h2>
-        <div class="score">
-          得分：{{ quizScore }}分
-          (<span>{{ correctCount }}/{{ quizQuestions.length }}</span>)
+        <div class="results-header">
+          <h2>答题结果</h2>
+          <div class="score">
+            得分：{{ quizScore }}分
+            (<span>{{ correctCount }}/{{ quizQuestions.length }}</span>)
+          </div>
         </div>
         
-        <div class="results-list">
-          <div 
-            v-for="(result, index) in quizResults" 
-            :key="index"
-            class="result-item"
-          >
-            <h3>第 {{ index + 1 }} 题</h3>
-            <p>{{ result.question }}</p>
-            <div class="answer-info">
-              <p>你的答案：<span :class="result.is_correct ? 'correct' : 'incorrect'">
-                {{ result.user_answer }}
-              </span></p>
-              <p>正确答案：{{ result.correct_answer }}</p>
-            </div>
-            <div class="explanation">
-              {{ result.explanation }}
+        <div class="results-container">
+          <div class="results-list">
+            <div 
+              v-for="(result, index) in quizResults" 
+              :key="index"
+              class="result-item"
+            >
+              <h3>第 {{ index + 1 }} 题</h3>
+              <p>{{ result.question }}</p>
+              <div class="answer-info">
+                <p>你的答案：<span :class="result.is_correct ? 'correct' : 'incorrect'">
+                  {{ result.user_answer }}
+                </span></p>
+                <p>正确答案：{{ result.correct_answer }}</p>
+              </div>
+              <div class="explanation">
+                {{ result.explanation }}
+              </div>
             </div>
           </div>
         </div>
@@ -504,6 +508,11 @@ export default {
   transition: all 0.3s ease;
 }
 
+.restart-btn {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
 .submit-btn:disabled {
   background: #ccc;
   cursor: not-allowed;
@@ -695,19 +704,62 @@ export default {
 .quiz-results {
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 4rem);
+  padding-bottom: 1rem;
+}
+
+.results-header {
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+}
+
+.results-header h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
 }
 
 .score {
   text-align: center;
   font-size: 1.5rem;
   color: #2c3e50;
-  margin: 2rem 0;
+  margin: 0;
+}
+
+.results-container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 自定义滚动条样式 */
+.results-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.results-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.results-container::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 4px;
+}
+
+.results-container::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
 }
 
 .results-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .result-item {
@@ -875,16 +927,30 @@ export default {
   /* 结果页面 */
   .quiz-results {
     padding: 0 0.5rem;
+    height: calc(100vh - 2rem);
+  }
+
+  .results-header h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
   }
 
   .score {
-    font-size: 1.3rem;
-    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .results-container {
+    padding-right: 0.25rem;
+  }
+
+  .results-container::-webkit-scrollbar {
+    width: 6px;
   }
 
   .result-item {
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .result-item h3 {

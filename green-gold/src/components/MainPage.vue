@@ -32,6 +32,8 @@ export default {
     goToSection(section) {
       if (section === 'anji') {
         this.$router.push('/anji-timeline')
+      } else if (section === 'knowledge') {
+        this.$router.push('/knowledge')
       } else if (section === 'quiz') {
         this.$router.push('/quiz')
       } else {

@@ -3,6 +3,7 @@ import StartPage from './components/StartPage.vue'
 import MainPage from './components/MainPage.vue'
 import AnjiTimeline from './components/AnjiTimeline.vue'
 import QuizPage from './components/QuizPage.vue'
+import KnowledgeMap from './components/KnowledgeMap.vue'
 
 const routes = [
     {
@@ -20,6 +21,10 @@ const routes = [
     {
         path: '/quiz',
         component: QuizPage
+    },
+    {
+        path: '/knowledge',
+        component: KnowledgeMap
     }
 ]
 
