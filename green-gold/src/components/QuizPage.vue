@@ -173,7 +173,7 @@
 </template>
 
 <script>
-const API_BASE = 'http://localhost:8000/api'
+const API_BASE = 'http://localhost:8000/api' 
 
 export default {
   name: 'QuizPage',
@@ -429,11 +429,11 @@ export default {
   margin: 0 auto;
 }
 
-/* 挑战模式时，为答题卡留出空间 */
+/* 挑战模式时，题目卡片居中显示 */
 .quiz-questions .question-card {
-  max-width: calc(100% - 280px);
-  margin-right: 260px;
-  margin-left: auto;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-right: 140px;
 }
 
 @media (min-width: 1400px) {
@@ -493,6 +493,33 @@ export default {
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: #333;
+}
+
+/* 挑战模式开始界面 */
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.start-screen h2 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.start-screen p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .submit-btn, .next-btn, .start-btn, .submit-quiz-btn, .restart-btn {

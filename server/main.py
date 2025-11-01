@@ -12,13 +12,20 @@ import random
 
 app = FastAPI()
 
-# 配置CORS
+# 配置CORS - 更宽松的配置用于调试
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite 默认端口
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://8.137.76.82:9000",
+        "http://8.137.76.82",
+        "*",  # 临时添加，允许所有来源（调试用）
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],  # 添加这行
 )
 
 # 题目库（实际项目中应该存储在数据库中）
