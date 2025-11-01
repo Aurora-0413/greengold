@@ -21,6 +21,13 @@
         <p>测试你对绿色发展理念的理解</p>
         <div class="arrow-animation"></div>
       </div>
+
+      <div class="explore-item" @click="goToSection('carbon')">
+        <div class="icon">🌱</div>
+        <h2>碳足迹计算</h2>
+        <p>计算您的碳排放，了解如何绿色生活</p>
+        <div class="arrow-animation"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -36,6 +43,8 @@ export default {
         this.$router.push('/knowledge')
       } else if (section === 'quiz') {
         this.$router.push('/quiz')
+      } else if (section === 'carbon') {
+        this.$router.push('/carbon-calculator')
       } else {
         // 后续添加其他导航逻辑
         console.log('Navigate to:', section)
@@ -255,10 +264,10 @@ export default {
 }
 
 .explore-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
   flex: 1;
@@ -347,6 +356,28 @@ export default {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .explore-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .explore-item {
+    padding: 2rem 1.5rem;
+  }
+
+  .explore-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .explore-item p {
+    font-size: 1rem;
+    max-width: 90%;
   }
 }
 </style>

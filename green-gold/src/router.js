@@ -4,6 +4,7 @@ import MainPage from './components/MainPage.vue'
 import AnjiTimeline from './components/AnjiTimeline.vue'
 import QuizPage from './components/QuizPage.vue'
 import KnowledgeMap from './components/KnowledgeMap.vue'
+import CarbonCalculator from './components/CarbonCalculator.vue'
 
 const routes = [
     {
@@ -25,6 +26,10 @@ const routes = [
     {
         path: '/knowledge',
         component: KnowledgeMap
+    },
+    {
+        path: '/carbon-calculator',
+        component: CarbonCalculator
     }
 ]
 
