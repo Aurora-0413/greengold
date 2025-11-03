@@ -201,8 +201,11 @@ export default {
 <style scoped>
 .knowledge-map {
   min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .header {
@@ -241,13 +244,14 @@ export default {
   border-radius: 16px;
   padding: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  overflow-x: auto;
+  overflow: auto;
+  max-height: calc(100vh - 200px);
 }
 
 .mindmap-svg {
   width: 100%;
   height: auto;
-  min-height: 800px;
+  min-height: 1000px;
 }
 
 /* 节点样式 */
@@ -397,6 +401,30 @@ export default {
 .detail-body p {
   font-size: 1.1rem;
   margin: 0;
+}
+
+/* 自定义滚动条样式 */
+.knowledge-map::-webkit-scrollbar,
+.map-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.knowledge-map::-webkit-scrollbar-track,
+.map-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.knowledge-map::-webkit-scrollbar-thumb,
+.map-container::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 4px;
+}
+
+.knowledge-map::-webkit-scrollbar-thumb:hover,
+.map-container::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
 }
 
 /* 响应式设计 */

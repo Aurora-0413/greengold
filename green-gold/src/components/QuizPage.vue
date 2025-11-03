@@ -169,11 +169,27 @@
     </div>
 
     <button class="back-btn" @click="goBack">返回</button>
+
+    <!-- 自定义确认弹窗 -->
+    <div v-if="showConfirmModal" class="confirm-modal" @click="closeConfirmModal">
+      <div class="confirm-content" @click.stop>
+        <div class="confirm-icon">⚠️</div>
+        <h3>确认提交？</h3>
+        <p class="confirm-message">
+          还有 <span class="highlight">{{ unansweredCount }}</span> 道题目未作答<br>
+          未作答的题目将按<span class="highlight">答案错误</span>处理
+        </p>
+        <div class="confirm-buttons">
+          <button class="cancel-btn" @click="closeConfirmModal">继续答题</button>
+          <button class="submit-confirm-btn" @click="confirmSubmit">确认提交</button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-const API_BASE = 'http://localhost:8000/api' 
+const API_BASE = '/api' 
 
 export default {
   name: 'QuizPage',
@@ -194,7 +210,9 @@ export default {
       currentQuestionIndex: 0,
       quizScore: 0,
       correctCount: 0,
-      quizResults: []
+      quizResults: [],
+      // 确认弹窗
+      showConfirmModal: false
     }
   },
   computed: {
@@ -319,13 +337,16 @@ export default {
     confirmSubmitQuiz() {
       // 检查是否有未答题
       if (this.unansweredCount > 0) {
-        const confirmed = confirm(
-          `还有 ${this.unansweredCount} 道题目未作答，未作答的题目将按答案错误处理。\n\n是否确认提交？`
-        )
-        if (!confirmed) {
-          return
-        }
+        this.showConfirmModal = true
+      } else {
+        this.submitQuiz()
       }
+    },
+    closeConfirmModal() {
+      this.showConfirmModal = false
+    },
+    confirmSubmit() {
+      this.showConfirmModal = false
       this.submitQuiz()
     },
     async submitQuiz() {
@@ -383,8 +404,11 @@ export default {
 <style scoped>
 .quiz-container {
   min-height: 100vh;
+  height: 100vh;
   padding: 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .quiz-header {
@@ -818,6 +842,25 @@ export default {
   font-weight: bold;
 }
 
+/* 自定义滚动条样式 */
+.quiz-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.quiz-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.quiz-container::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 4px;
+}
+
+.quiz-container::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
+}
+
 @media (max-width: 768px) {
   .quiz-container {
     padding: 1rem;
@@ -997,6 +1040,162 @@ export default {
   .explanation {
     font-size: 0.9rem;
     line-height: 1.5;
+  }
+}
+
+/* 自定义确认弹窗样式 */
+.confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.confirm-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.confirm-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.confirm-content h3 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.confirm-message {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.confirm-message .highlight {
+  color: #f44336;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.confirm-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cancel-btn,
+.submit-confirm-btn {
+  flex: 1;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.cancel-btn {
+  background: #f5f5f5;
+  color: #666;
+  border: 2px solid #ddd;
+}
+
+.cancel-btn:hover {
+  background: #e0e0e0;
+  border-color: #bbb;
+  transform: translateY(-2px);
+}
+
+.submit-confirm-btn {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: 2px solid #4CAF50;
+}
+
+.submit-confirm-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.cancel-btn:active,
+.submit-confirm-btn:active {
+  transform: translateY(0);
+}
+
+/* 移动端弹窗适配 */
+@media (max-width: 768px) {
+  .confirm-content {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+
+  .confirm-icon {
+    font-size: 3rem;
+  }
+
+  .confirm-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .confirm-message {
+    font-size: 1rem;
+  }
+
+  .confirm-buttons {
+    flex-direction: column;
+  }
+
+  .cancel-btn,
+  .submit-confirm-btn {
+    width: 100%;
   }
 }
 </style>
