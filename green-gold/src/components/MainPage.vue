@@ -35,6 +35,12 @@
         <p>在荒漠上种植耐旱树木，创造绿色奇迹</p>
         <div class="arrow-animation"></div>
       </div>
+        <div class="explore-item" @click="goToSection('waste')">
+          <div class="icon">🗑️</div>
+          <h2>垃圾分类小游戏</h2>
+          <p>挑战你的垃圾分类知识，做环保小达人</p>
+          <div class="arrow-animation"></div>
+        </div>
     </div>
   </div>
 </template>
@@ -54,6 +60,8 @@ export default {
         this.$router.push('/carbon-calculator')
       } else if (section === 'scene') {
         this.$router.push('/scene-designer')
+      } else if (section === 'waste') {
+        this.$router.push('/waste-sorting')
       } else {
         // 后续添加其他导航逻辑
         console.log('Navigate to:', section)
@@ -274,7 +282,8 @@ export default {
 
 .explore-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 2rem;
   max-width: 1400px;
   margin: 0 auto;
@@ -369,9 +378,18 @@ export default {
 }
 
 /* 响应式布局 */
+@media (max-width: 1200px) {
+  .explore-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .explore-container {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     padding: 2rem 1rem;
     gap: 1.5rem;
   }
