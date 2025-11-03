@@ -5,6 +5,7 @@ import AnjiTimeline from './components/AnjiTimeline.vue'
 import QuizPage from './components/QuizPage.vue'
 import KnowledgeMap from './components/KnowledgeMap.vue'
 import CarbonCalculator from './components/CarbonCalculator.vue'
+import SceneDesigner from './components/SceneDesigner.vue'
 
 const routes = [
     {
@@ -30,6 +31,10 @@ const routes = [
     {
         path: '/carbon-calculator',
         component: CarbonCalculator
+    },
+    {
+        path: '/scene-designer',
+        component: SceneDesigner
     }
 ]
 

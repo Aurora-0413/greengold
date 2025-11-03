@@ -28,6 +28,13 @@
         <p>计算您的碳排放，了解如何绿色生活</p>
         <div class="arrow-animation"></div>
       </div>
+
+      <div class="explore-item" @click="goToSection('scene')">
+        <div class="icon">🏜️</div>
+        <h2>场景设计</h2>
+        <p>在荒漠上种植耐旱树木，创造绿色奇迹</p>
+        <div class="arrow-animation"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -45,6 +52,8 @@ export default {
         this.$router.push('/quiz')
       } else if (section === 'carbon') {
         this.$router.push('/carbon-calculator')
+      } else if (section === 'scene') {
+        this.$router.push('/scene-designer')
       } else {
         // 后续添加其他导航逻辑
         console.log('Navigate to:', section)
@@ -265,9 +274,9 @@ export default {
 
 .explore-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 3rem 2rem;
   flex: 1;
